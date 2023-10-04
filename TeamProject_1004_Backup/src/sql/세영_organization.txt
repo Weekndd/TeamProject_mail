@@ -1,0 +1,30 @@
+-- ORGANIZATION TABLE 생성
+CREATE TABLE ORGANIZATION (
+MEMBER_NAME VARCHAR2(20 BYTE),
+DIV_NAME VARCHAR2(20 BYTE),
+RANK VARCHAR2(20 BYTE),
+MAIL VARCHAR2(20 BYTE),
+PHOTO VARCHAR2(20 BYTE)
+);
+-- ////////////////////////////////
+INSERT INTO organization VALUES ('서가랑', '인사', '팀장', 'kowi873@aa.com', NULL);
+INSERT INTO organization VALUES ('이지나', '기획', '팀장', 'leals8l@aa.com', NULL);
+INSERT INTO organization VALUES ('차주영', '총무', '팀장', 'e7drzggap2@aa.com', NULL);
+INSERT INTO organization VALUES ('박하나', '기획', '사원', 'fpcultq7@aa.com', NULL);
+INSERT INTO organization VALUES ('심유경', '인사', '사원', 'liqbs8@aa.com', NULL);
+INSERT INTO organization VALUES ('조정은', '영업', '팀장', 'ugqlq5@aa.com', NULL);
+INSERT INTO organization VALUES ('김현욱', '기획', '사원', '57pxl0@aa.com', NULL);
+INSERT INTO organization VALUES ('심주환', '총무', '사원', 'exofc2@aa.com', NULL);
+INSERT INTO organization VALUES ('강재이', '영업', '사원', 'eiuhtv@aa.com', NULL);
+INSERT INTO organization VALUES ('백준용', '총무', '사원', 'zmee60@aa.com', NULL);
+INSERT INTO organization VALUES ('서준우', '총무', '사원', 'fivtos@aa.com', NULL);
+INSERT INTO organization VALUES ('박인량', '영업', '사원', '9wijzi@aa.com', NULL);
+INSERT INTO organization VALUES ('김정원', '영업', '사원', 'uyzii6@aa.com', NULL);
+INSERT INTO organization VALUES ('차은우', '인사', '사원', 'mhv931@aa.com', NULL);
+INSERT INTO organization VALUES ('장형일', '기획', '사원', '5fify3@aa.com', NULL);
+INSERT INTO organization VALUES ('주윤진', '인사', '사원', 'ibtpog@aa.com', NULL);
+INSERT INTO organization VALUES ('채영준', '인사', '사원', 'qgbdo2@aa.com', NULL);
+INSERT INTO organization VALUES ('강형택', '기획', '사원', 'vrobaod@aa.com', NULL);
+INSERT INTO organization VALUES ('김준호', '총무', '사원', 'vqxsb0@aa.com', NULL);
+INSERT INTO organization VALUES ('공지영', '총무', '사원', '9nwwcd@aa.com', NULL);
+INSERT INTO organization VALUES ('황재윤', '영업', '사원', '04argm@aa.com', NULL);

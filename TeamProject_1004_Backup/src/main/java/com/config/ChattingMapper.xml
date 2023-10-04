@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ChattingMapper">
+	
+	<select id="searchValue" resultType="MemberDTO" parameterType="hashmap">
+	select * from member
+	  <where>
+            <choose>
+                <when test="searchCondition == 'all'">
+                    div_name LIKE '%' || #{searchValue} || '%' or
+                     member_name LIKE '%' || #{searchValue} || '%'
+                </when>
+                <otherwise>
+                    <if test="searchCondition == 'division'">
+                        div_name LIKE '%' || #{searchValue} || '%'
+                    </if>
+                    <if test="searchCondition == 'memberName'">
+                        member_name LIKE '%' || #{searchValue} || '%'
+                    </if>
+                </otherwise>
+            </choose>
+        </where>
+	
+	
+	
+	
+	
+	</select>
+</mapper>
